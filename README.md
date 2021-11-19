@@ -3,3 +3,10 @@
 A small project to practice React, HTML and CSS
 
 [Click here to acess the project](https://react-business-card-weld.vercel.app)
+
+# Skills
+
+- JSX
+- Custom components
+- Styling
+- Static pages
