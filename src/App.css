@@ -1,38 +1,100 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #23252C;
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  margin: 8px auto;
+  width: 317px;
+  height: 680px;
+  background-color: #1A1B21;
+}
+
+.card img {
+  width: 318px;
+}
+
+.main {
+  background-color: #1A1B21;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name {
+  font-size: 25px;
+  margin-bottom: 0px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.role {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #F3BF99;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.btn-email {
+  border-radius: 5px;
+  color: black;
+  border: none;
+  padding: 10px 110px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.btn-email::before {
+  font-family: fontAwesome;
+  margin-right: 5px;
+  content: "\f0e0";
+}
+
+.topic {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.topic > h2 {
+  position: relative;
+  right: 31%;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.topic > p {
+  text-align: justify;
+  margin: 0 auto;
+  font-size: 11px;
+  max-width: 247px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 15px;
+  display: inline-flex;
+  align-self: flex-end;
+  justify-content: space-around;
   color: white;
+  background-color: #161619;
+  width: 317px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer > .icon {
+  color: white;
+  margin-bottom: 8px;
+  padding-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer, .card {
+  border-radius: 15px;
+}
+
+.card header img {
+  border-radius: 15px 15px 0px 0px;
 }
